@@ -18,8 +18,6 @@ The honeypot consists of a single `FastAPI` application that binds to multiple p
 | **vLLM** | `8000` | `/v1/models`, `/v1/chat/completions` | Mimics OpenAI-compatible API endpoints used by vLLM. |
 | **MCP** | `3000` | Generic JSON RPC | Catches IoT/Web scanners and Model Context Protocol probes. |
 
-
-
 ## 🚨 Key Findings (Live Data)
 
 Within **45 minutes** of deployment on a public cloud instance, the node was identified and targeted.
@@ -44,7 +42,7 @@ Attackers attempted to exploit the web layer using **NodeJS Prototype Pollution*
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/harshakshit/bizzare_honeypot.git
+    git clone [https://github.com/harshakshit/bizzare_honeypot.git](https://github.com/harshakshit/bizzare_honeypot.git)
     cd llm-honeypot
     ```
 
@@ -63,22 +61,3 @@ HONEYPOT_PROFILE=ollama uvicorn honeypot:app --host 0.0.0.0 --port 11434
 
 # Run the vLLM profile
 HONEYPOT_PROFILE=vllm uvicorn honeypot:app --host 0.0.0.0 --port 8000
-
-## 📂 Project Structure
-
-```text
-├── honeypot.py              # Main application logic (FastAPI)
-├── requirements.txt         # Python dependencies
-├── services/                # Systemd service files for persistence
-│   ├── honeypot-ollama.service
-│   ├── honeypot-vllm.service
-│   └── honeypot-mcp.service
-└── README.md                # Documentation
-
-## 👨‍💻 About
-Built as a research project to analyze the TTPs (Tactics, Techniques, and Procedures) of active AI-targeting campaigns.
-
-**Connect with me:**
-* [LinkedIn](https://www.linkedin.com/in/harshakshit/)
-
-
