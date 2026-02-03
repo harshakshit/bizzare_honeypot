@@ -1,0 +1,5 @@
+honeypot_events.json
+/var/log/honeypot_events.json
+__pycache__/
+*.log
+.DS_Store
