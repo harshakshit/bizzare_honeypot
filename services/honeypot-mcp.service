@@ -1,0 +1,14 @@
+[Unit]
+Description=Honeypot - Fake MCP
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root
+Environment="HONEYPOT_PROFILE=mcp"
+# REPLACE with your 'which uvicorn' path
+ExecStart=/usr/bin/uvicorn honeypot:app --host 0.0.0.0 --port 3000 --log-level warning
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
