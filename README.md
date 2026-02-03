@@ -8,6 +8,8 @@ This project specifically replicates the signatures of **Ollama**, **vLLM**, and
 
 ## 🏗️ Architecture
 
+![Honeypot Architecture](architecture.png)
+
 The honeypot consists of a single `FastAPI` application that binds to multiple ports, mimicking specific AI service fingerprints.
 
 | Service | Port | Signature Mimicked | Behavior |
