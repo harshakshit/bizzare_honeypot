@@ -61,3 +61,22 @@ HONEYPOT_PROFILE=ollama uvicorn honeypot:app --host 0.0.0.0 --port 11434
 
 # Run the vLLM profile
 HONEYPOT_PROFILE=vllm uvicorn honeypot:app --host 0.0.0.0 --port 8000
+
+## 📂 Project Structure
+
+```text
+├── honeypot.py              # Main application logic (FastAPI)
+├── requirements.txt         # Python dependencies
+├── services/                # Systemd service files for persistence
+│   ├── honeypot-ollama.service
+│   ├── honeypot-vllm.service
+│   └── honeypot-mcp.service
+└── README.md                # Documentation
+
+## 👨‍💻 About
+Built as a research project to analyze the TTPs (Tactics, Techniques, and Procedures) of active AI-targeting campaigns.
+
+**Connect with me:**
+* [LinkedIn](https://www.linkedin.com/in/harshakshit/)
+
+
