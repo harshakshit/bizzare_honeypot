@@ -42,7 +42,7 @@ Attackers attempted to exploit the web layer using **NodeJS Prototype Pollution*
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/llm-honeypot.git](https://github.com/YOUR_USERNAME/llm-honeypot.git)
+    git clone https://github.com/harshakshit/bizzare_honeypot.git
     cd llm-honeypot
     ```
 
